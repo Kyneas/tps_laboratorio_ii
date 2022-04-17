@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiCalculadora", "TP1\MiCalc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{5AAE6964-E488-4CC5-93F6-AD0A405A2E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST", "TEST\TEST.csproj", "{BA69B594-54C7-4318-9964-4C696AAB6694}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5AAE6964-E488-4CC5-93F6-AD0A405A2E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AAE6964-E488-4CC5-93F6-AD0A405A2E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AAE6964-E488-4CC5-93F6-AD0A405A2E39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA69B594-54C7-4318-9964-4C696AAB6694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA69B594-54C7-4318-9964-4C696AAB6694}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA69B594-54C7-4318-9964-4C696AAB6694}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA69B594-54C7-4318-9964-4C696AAB6694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
