@@ -13,24 +13,39 @@ namespace TP1
 {
     public partial class FormCalculadora : Form
     {
+        /// <summary>
+        /// Constructor del formulario para inicializar los componentes
+        /// </summary>
         public FormCalculadora()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Luego de presionar el boton btnLimpiar_Click, llama al metodo Limpiar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
-
+        /// <summary>
+        /// Borra los datos de los TextBox, ComboBox y Label de la pantalla.
+        /// </summary>
         private void Limpiar()
         {
             this.txtNumero1.Text = String.Empty;
             this.txtNumero2.Text = String.Empty;
             this.lblResultado.Text = String.Empty;
+            this.cmbOperador.SelectedIndex = 0;
             btnConvertirABinario.Enabled = false;
             btnConvertirADecimal.Enabled = false;
         }
-
+        /// <summary>
+        /// Al presionar en el boton btnOperar_Click, llama al metodo Operar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             string operando1 = txtNumero1.Text;
@@ -60,7 +75,13 @@ namespace TP1
                 sb.Clear();
             }
         }
-
+        /// <summary>
+        /// Permite realizar la operacion matematica solicitada entre 2 numeros
+        /// </summary>
+        /// <param name="numero1">Primer operando</param>
+        /// <param name="numero2">Segundo operando</param>
+        /// <param name="stOperador">Operacion matematica a realizar</param>
+        /// <returns>Resultado de la operacion</returns>
         private double Operar(string numero1, string numero2, string stOperador)
         {
             Operando operando1 = new Operando(numero1);
@@ -70,15 +91,20 @@ namespace TP1
 
              return Calculadora.Operar(operando1, operando2, operador);
         }
-
+        /// <summary>
+        /// Carga inicial de los componentes de la calculadora
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
-            this.cmbOperador.SelectedIndex = 0;
-            this.lblResultado.Text = String.Empty;
-            btnConvertirABinario.Enabled = false;
-            btnConvertirADecimal.Enabled = false;
+            Limpiar();
         }
-
+        /// <summary>
+        /// Confirma con el usuario la accion de cerrar el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -91,12 +117,20 @@ namespace TP1
                 }
             }
         }
-
+        /// <summary>
+        /// Al presionar el boton btnCerrar_Click, intenta cerrar el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Al presionar en el boton brnConvertirABinario_Click, convierte el valor almacenado en lblResultado a binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void brnConvertirABinario_Click(object sender, EventArgs e)
         {
             StringBuilder sb = new StringBuilder();
@@ -109,7 +143,11 @@ namespace TP1
             btnConvertirABinario.Enabled = false;
             btnConvertirADecimal.Enabled = true;
         }
-
+        /// <summary>
+        /// Al presionar en el boton btnConvertirADecimal_Click,convierte el valor almacenado en lblResultado a decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             StringBuilder sb = new StringBuilder();

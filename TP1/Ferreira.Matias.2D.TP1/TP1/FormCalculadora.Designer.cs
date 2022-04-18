@@ -58,7 +58,7 @@ namespace TP1
             this.cmbOperador.Location = new System.Drawing.Point(178, 129);
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(68, 29);
-            this.cmbOperador.TabIndex = 0;
+            this.cmbOperador.TabIndex = 1;
             // 
             // txtNumero1
             // 
@@ -66,7 +66,7 @@ namespace TP1
             this.txtNumero1.Location = new System.Drawing.Point(14, 129);
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(100, 27);
-            this.txtNumero1.TabIndex = 1;
+            this.txtNumero1.TabIndex = 0;
             // 
             // txtNumero2
             // 
@@ -84,7 +84,8 @@ namespace TP1
             this.lstOperaciones.Location = new System.Drawing.Point(428, 12);
             this.lstOperaciones.Name = "lstOperaciones";
             this.lstOperaciones.Size = new System.Drawing.Size(224, 259);
-            this.lstOperaciones.TabIndex = 3;
+            this.lstOperaciones.TabIndex = 8;
+            this.lstOperaciones.TabStop = false;
             // 
             // btnOperar
             // 
@@ -92,7 +93,7 @@ namespace TP1
             this.btnOperar.Location = new System.Drawing.Point(14, 182);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(126, 32);
-            this.btnOperar.TabIndex = 4;
+            this.btnOperar.TabIndex = 3;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
             this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
@@ -103,7 +104,7 @@ namespace TP1
             this.btnLimpiar.Location = new System.Drawing.Point(146, 182);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(126, 32);
-            this.btnLimpiar.TabIndex = 5;
+            this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -114,7 +115,7 @@ namespace TP1
             this.btnCerrar.Location = new System.Drawing.Point(278, 182);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(126, 32);
-            this.btnCerrar.TabIndex = 6;
+            this.btnCerrar.TabIndex = 5;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -125,7 +126,7 @@ namespace TP1
             this.btnConvertirABinario.Location = new System.Drawing.Point(14, 241);
             this.btnConvertirABinario.Name = "btnConvertirABinario";
             this.btnConvertirABinario.Size = new System.Drawing.Size(189, 32);
-            this.btnConvertirABinario.TabIndex = 7;
+            this.btnConvertirABinario.TabIndex = 6;
             this.btnConvertirABinario.Text = "Convertir a Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = true;
             this.btnConvertirABinario.Click += new System.EventHandler(this.brnConvertirABinario_Click);
@@ -136,7 +137,7 @@ namespace TP1
             this.btnConvertirADecimal.Location = new System.Drawing.Point(215, 241);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
             this.btnConvertirADecimal.Size = new System.Drawing.Size(189, 32);
-            this.btnConvertirADecimal.TabIndex = 8;
+            this.btnConvertirADecimal.TabIndex = 7;
             this.btnConvertirADecimal.Text = "Convertir A Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
             this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
