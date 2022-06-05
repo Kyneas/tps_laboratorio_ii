@@ -1,0 +1,12 @@
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\bin\Debug\net5.0\LogicaTP3.deps.json
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\bin\Debug\net5.0\LogicaTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\bin\Debug\net5.0\ref\LogicaTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\bin\Debug\net5.0\LogicaTP3.pdb
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.csproj.AssemblyReference.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.AssemblyInfoInputs.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.AssemblyInfo.cs
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.csproj.CoreCompileInputs.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\ref\LogicaTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\LogicaTP3\obj\Debug\net5.0\LogicaTP3.pdb

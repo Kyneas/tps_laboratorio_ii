@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FormularioTP3/1.0.0": {
+        "dependencies": {
+          "LogicaTP3": "1.0.0"
+        },
+        "runtime": {
+          "FormularioTP3.dll": {}
+        }
+      },
+      "LogicaTP3/1.0.0": {
+        "runtime": {
+          "LogicaTP3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FormularioTP3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogicaTP3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVenta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Venta>
+    <IdVenta>0</IdVenta>
+    <FechaVenta>0001-01-01T00:00:00</FechaVenta>
+    <Saldo>0</Saldo>
+    <ListaProductos />
+  </Venta>
+  <Venta>
+    <IdVenta>0</IdVenta>
+    <FechaVenta>0001-01-01T00:00:00</FechaVenta>
+    <Saldo>0</Saldo>
+    <ListaProductos />
+  </Venta>
+  <Venta>
+    <IdVenta>0</IdVenta>
+    <FechaVenta>0001-01-01T00:00:00</FechaVenta>
+    <Saldo>0</Saldo>
+    <ListaProductos />
+  </Venta>
+  <Venta>
+    <IdVenta>16</IdVenta>
+    <FechaVenta>2022-06-05T20:13:28.1779888-03:00</FechaVenta>
+    <Saldo>200</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>148</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>5</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Cigarrillos                         100   200  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>17</IdVenta>
+    <FechaVenta>2022-06-05T20:13:34.1215676-03:00</FechaVenta>
+    <Saldo>122</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>150</IdProducto>
+        <Nombre>Chupetin</Nombre>
+        <Precio>10</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>10</Stock>
+      </Producto>
+      <Producto>
+        <IdProducto>151</IdProducto>
+        <Nombre>Algo</Nombre>
+        <Precio>34</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>5</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Chupetin                            10    20   
+#3     Algo                                34    102  
+------------------------------
+</Pedido>
+  </Venta>
+</ArrayOfVenta>

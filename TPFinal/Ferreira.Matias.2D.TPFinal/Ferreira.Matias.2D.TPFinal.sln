@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormularioTP3", "FormularioTP3\FormularioTP3.csproj", "{2EAEBD7E-9AF7-4118-93B8-1E8E61E9DD2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicaTP3", "LogicaTP3\LogicaTP3.csproj", "{D6AF008A-0805-4684-8A44-D709CAE0D3ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EAEBD7E-9AF7-4118-93B8-1E8E61E9DD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAEBD7E-9AF7-4118-93B8-1E8E61E9DD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAEBD7E-9AF7-4118-93B8-1E8E61E9DD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAEBD7E-9AF7-4118-93B8-1E8E61E9DD2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AF008A-0805-4684-8A44-D709CAE0D3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AF008A-0805-4684-8A44-D709CAE0D3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AF008A-0805-4684-8A44-D709CAE0D3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AF008A-0805-4684-8A44-D709CAE0D3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CEA37D0-5A8C-471C-B529-D6B65F9DCB75}
+	EndGlobalSection
+EndGlobal
