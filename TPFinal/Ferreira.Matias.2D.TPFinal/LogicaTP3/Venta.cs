@@ -82,5 +82,14 @@ namespace LogicaTP3
                 throw new Exception("Error al escribir el archivo con el ultimo id", ex);
             }
         }
+        public static Venta VentaPorId(int id, List<Venta> lista)
+        {
+            foreach (Venta item in lista)
+            {
+                if (item.IdVenta == id)
+                    return item;
+            }
+            return null;
+        }
     }
 }

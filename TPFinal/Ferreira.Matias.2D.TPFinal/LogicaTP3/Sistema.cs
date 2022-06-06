@@ -78,6 +78,12 @@ namespace LogicaTP3
             GuardarProductos();
         }
 
+        public static void EliminarProducto(Producto producto)
+        {
+            listaProductos.Remove(producto);
+            GuardarProductos();
+        }
+
         public static List<Producto> ClonarLista(List<Producto> listaOrigen)
         {
             List<Producto> listaCopia = new List<Producto>();

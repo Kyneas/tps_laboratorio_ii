@@ -49,24 +49,38 @@ namespace FormularioTP3
 
         private void NuevaVenta_Load(object sender, EventArgs e)
         {
-            ListarProductosParaLaVenta();
-            lblSaldoTotal.Text = "Saldo: $0";
+            try
+            {
+                ListarProductosParaLaVenta();
+                lblSaldoTotal.Text = "Saldo: $0";
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
 
         private void btnMas_Click(object sender, EventArgs e)
         {
-            if (lvwListaProductosParaVenta.SelectedItems.Count > 0)
+            try
             {
-                btnMenos.Enabled = true;
-                Producto productoSistema = Producto.ProductoPorId(idProducto, copiaListaProductosDeSistema);
-                Producto productoPedido = Producto.ProductoPorId(idProducto, comidaPedida);
-                AgregarOSumarProducto(productoSistema, productoPedido);
-                ListarProductosPedidos();
-                int itemSeleccionado = lvwListaProductosParaVenta.SelectedIndices[0];
-                ListarProductosParaLaVenta();
-                lvwListaProductosParaVenta.Items[itemSeleccionado].Selected = true;
-                lblSaldoTotal.Text = $"Saldo: ${CalcularSaldo()}";
-                btnConfirmarVenta.Enabled = true;
+                if (lvwListaProductosParaVenta.SelectedItems.Count > 0)
+                {
+                    btnMenos.Enabled = true;
+                    Producto productoSistema = Producto.ProductoPorId(idProducto, copiaListaProductosDeSistema);
+                    Producto productoPedido = Producto.ProductoPorId(idProducto, comidaPedida);
+                    AgregarOSumarProducto(productoSistema, productoPedido);
+                    ListarProductosPedidos();
+                    int itemSeleccionado = lvwListaProductosParaVenta.SelectedIndices[0];
+                    ListarProductosParaLaVenta();
+                    lvwListaProductosParaVenta.Items[itemSeleccionado].Selected = true;
+                    lblSaldoTotal.Text = $"Saldo: ${CalcularSaldo()}";
+                    btnConfirmarVenta.Enabled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
@@ -82,17 +96,24 @@ namespace FormularioTP3
 
         private void btnMenos_Click(object sender, EventArgs e)
         {
-            if (lvwListaProductosParaVenta.SelectedItems.Count > 0)
+            try
             {
-                btnMas.Enabled = true;
-                Producto productoSistema = Producto.ProductoPorId(idProducto, copiaListaProductosDeSistema);
-                Producto productoPedido = Producto.ProductoPorId(idProducto, comidaPedida);
-                RestarOQuitarProductos(productoSistema, productoPedido);
-                ListarProductosPedidos();
-                int itemSeleccionado = lvwListaProductosParaVenta.SelectedIndices[0];
-                ListarProductosParaLaVenta();
-                lvwListaProductosParaVenta.Items[itemSeleccionado].Selected = true;
-                lblSaldoTotal.Text = $"Saldo: ${CalcularSaldo()}";
+                if (lvwListaProductosParaVenta.SelectedItems.Count > 0)
+                {
+                    btnMas.Enabled = true;
+                    Producto productoSistema = Producto.ProductoPorId(idProducto, copiaListaProductosDeSistema);
+                    Producto productoPedido = Producto.ProductoPorId(idProducto, comidaPedida);
+                    RestarOQuitarProductos(productoSistema, productoPedido);
+                    ListarProductosPedidos();
+                    int itemSeleccionado = lvwListaProductosParaVenta.SelectedIndices[0];
+                    ListarProductosParaLaVenta();
+                    lvwListaProductosParaVenta.Items[itemSeleccionado].Selected = true;
+                    lblSaldoTotal.Text = $"Saldo: ${CalcularSaldo()}";
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
@@ -107,30 +128,44 @@ namespace FormularioTP3
 
         private void lvwListaProductosParaVenta_MouseUp(object sender, MouseEventArgs e)
         {
-            if (lvwListaProductosParaVenta.SelectedItems.Count == 0)
+            try
             {
-                btnMas.Enabled = false;
-                btnMenos.Enabled = false;
+                if (lvwListaProductosParaVenta.SelectedItems.Count == 0)
+                {
+                    btnMas.Enabled = false;
+                    btnMenos.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
         private void lvwListaProductosParaVenta_Click(object sender, EventArgs e)
         {
-            if (lvwListaProductosParaVenta.SelectedItems.Count > 0)
+            try
             {
-                idProducto = int.Parse(lvwListaProductosParaVenta.SelectedItems[0].Text);
-                Producto producto = Producto.ProductoPorId(idProducto, copiaListaProductosDeSistema);
-                Producto productoPedido = Producto.ProductoPorId(idProducto, comidaPedida);
+                if (lvwListaProductosParaVenta.SelectedItems.Count > 0)
+                {
+                    idProducto = int.Parse(lvwListaProductosParaVenta.SelectedItems[0].Text);
+                    Producto producto = Producto.ProductoPorId(idProducto, copiaListaProductosDeSistema);
+                    Producto productoPedido = Producto.ProductoPorId(idProducto, comidaPedida);
 
-                if (producto is not null && producto.Stock > 0)
-                    btnMas.Enabled = true;
-                else
-                    btnMas.Enabled = false;
+                    if (producto is not null && producto.Stock > 0)
+                        btnMas.Enabled = true;
+                    else
+                        btnMas.Enabled = false;
 
-                if (productoPedido is not null)
-                    btnMenos.Enabled = true;
-                else
-                    btnMenos.Enabled = false;
+                    if (productoPedido is not null)
+                        btnMenos.Enabled = true;
+                    else
+                        btnMenos.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
@@ -172,11 +207,18 @@ namespace FormularioTP3
 
         private void btnConfirmarVenta_Click(object sender, EventArgs e)
         {
-            ActulizarStockSistema();
-            Venta ventaEfectuada = new Venta(CalcularSaldo(), comidaPedida);
-            Sistema.AgregarVenta(ventaEfectuada);
-            MessageBox.Show(ventaEfectuada.ToString());
-            this.Dispose();
+            try
+            {
+                ActulizarStockSistema();
+                Venta ventaEfectuada = new Venta(CalcularSaldo(), comidaPedida);
+                Sistema.AgregarVenta(ventaEfectuada);
+                MessageBox.Show(ventaEfectuada.ToString());
+                this.Dispose();
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
     }
 }

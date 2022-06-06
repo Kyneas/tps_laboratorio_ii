@@ -25,7 +25,14 @@ namespace FormularioTP3
 
         private void Ventas_Load(object sender, EventArgs e)
         {
-            ListarVentas();
+            try
+            {
+                ListarVentas();
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
 
         private void ListarVentas()
@@ -39,23 +46,18 @@ namespace FormularioTP3
 
         private void lvwListaVentas_Click(object sender, EventArgs e)
         {
-            if (lvwListaVentas.SelectedItems.Count > 0)
+            try
             {
-                int idVenta = int.Parse(lvwListaVentas.SelectedItems[0].Text);
-                MessageBox.Show(VentaPorId(idVenta).ToString());
+                if (lvwListaVentas.SelectedItems.Count > 0)
+                {
+                    int idVenta = int.Parse(lvwListaVentas.SelectedItems[0].Text);
+                    MessageBox.Show(Venta.VentaPorId(idVenta, Sistema.listaVentas).ToString());
+                }
             }
-
-        }
-
-        private Venta VentaPorId (int id)
-        {
-            foreach (Venta item in Sistema.listaVentas)
+            catch (Exception ex)
             {
-                if (item.IdVenta == id)
-                    return item;
+                LogicaForms.MostrarExcepciones(ex);
             }
-            return null;
         }
-
     }
 }

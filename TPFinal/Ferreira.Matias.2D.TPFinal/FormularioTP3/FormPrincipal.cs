@@ -19,11 +19,18 @@ namespace FormularioTP3
 
         private void btnCargarVentana_Click(object sender, EventArgs e)
         {
-            LogicaForms.CerrarFormulariosDelPanel(pnlPrincipal);
-            NuevaVenta menuVenta = new NuevaVenta();
-            menuVenta.TopLevel = false;
-            pnlPrincipal.Controls.Add(menuVenta);
-            menuVenta.Show();
+            try
+            {
+                LogicaForms.CerrarFormulariosDelPanel(pnlPrincipal);
+                NuevaVenta menuVenta = new NuevaVenta();
+                menuVenta.TopLevel = false;
+                pnlPrincipal.Controls.Add(menuVenta);
+                menuVenta.Show();
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -38,20 +45,34 @@ namespace FormularioTP3
 
         private void btnInsumos_Click(object sender, EventArgs e)
         {
-            LogicaForms.CerrarFormulariosDelPanel(pnlPrincipal);
-            AdministrarInsumos menuInsumos = new AdministrarInsumos();
-            menuInsumos.TopLevel = false;
-            pnlPrincipal.Controls.Add(menuInsumos);
-            menuInsumos.Show();
+            try
+            {
+                LogicaForms.CerrarFormulariosDelPanel(pnlPrincipal);
+                AdministrarInsumos menuInsumos = new AdministrarInsumos();
+                menuInsumos.TopLevel = false;
+                pnlPrincipal.Controls.Add(menuInsumos);
+                menuInsumos.Show();
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
 
         private void btbVentas_Click(object sender, EventArgs e)
         {
-            LogicaForms.CerrarFormulariosDelPanel(pnlPrincipal);
-            FormVentas menuAdministrarVenta = new FormVentas();
-            menuAdministrarVenta.TopLevel = false;
-            pnlPrincipal.Controls.Add(menuAdministrarVenta);
-            menuAdministrarVenta.Show();
+            try
+            {
+                LogicaForms.CerrarFormulariosDelPanel(pnlPrincipal);
+                FormVentas menuAdministrarVenta = new FormVentas();
+                menuAdministrarVenta.TopLevel = false;
+                pnlPrincipal.Controls.Add(menuAdministrarVenta);
+                menuAdministrarVenta.Show();
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
     }
 }

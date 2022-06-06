@@ -29,10 +29,24 @@
     <Stock>10</Stock>
   </Producto>
   <Producto>
-    <IdProducto>151</IdProducto>
-    <Nombre>Algo</Nombre>
+    <IdProducto>158</IdProducto>
+    <Nombre>Palito</Nombre>
+    <Precio>12</Precio>
+    <Cantidad>0</Cantidad>
+    <Stock>12</Stock>
+  </Producto>
+  <Producto>
+    <IdProducto>159</IdProducto>
+    <Nombre>otrads</Nombre>
+    <Precio>23</Precio>
+    <Cantidad>0</Cantidad>
+    <Stock>567</Stock>
+  </Producto>
+  <Producto>
+    <IdProducto>160</IdProducto>
+    <Nombre>Ald</Nombre>
     <Precio>34</Precio>
     <Cantidad>0</Cantidad>
-    <Stock>5</Stock>
+    <Stock>56</Stock>
   </Producto>
 </ArrayOfProducto>

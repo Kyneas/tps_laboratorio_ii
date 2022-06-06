@@ -24,6 +24,15 @@ namespace LogicaTP3
             this.stock = stock;
             AumentarId();
         }
+        public Producto(string nombre, string precio, int stock)
+        {
+            this.idProducto = UltimoId();
+            this.nombre = nombre;
+            this.precio = ValidarPrecio(precio);
+            this.cantidad = 0;
+            this.stock = stock;
+            AumentarId();
+        }
         public Producto(int id, string nombre, float precio, int stock)
         {
             this.idProducto = id;
@@ -79,6 +88,32 @@ namespace LogicaTP3
                     return producto;
             }
             return null;
+        }
+
+        public static float ValidarPrecio(string value)
+        {
+            if (value == String.Empty)
+            {
+                throw new ParametrosVaciosException("Ingrese un precio");
+            }
+            if (!float.TryParse(value, out float precio) || precio >= 10000 || precio <= 0)
+            {
+                throw new DatoInvalidoException("Ingrese un precio valido");
+            }
+            return precio;
+        }
+
+        public static int ValidarStock(string value)
+        {
+            if (value == String.Empty)
+            {
+                throw new ParametrosVaciosException("Ingrese un stock");
+            }
+            if (!int.TryParse(value, out int stock) || stock >= 1000 || stock < 0)
+            {
+                throw new DatoInvalidoException("Ingrese un stock valido");
+            }
+            return stock;
         }
     }
 }

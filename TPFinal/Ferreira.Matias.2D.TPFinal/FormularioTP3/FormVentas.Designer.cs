@@ -42,11 +42,12 @@ namespace FormularioTP3
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.lvwListaVentas.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvwListaVentas.FullRowSelect = true;
             this.lvwListaVentas.HideSelection = false;
-            this.lvwListaVentas.Location = new System.Drawing.Point(124, 45);
+            this.lvwListaVentas.Location = new System.Drawing.Point(112, 50);
             this.lvwListaVentas.Name = "lvwListaVentas";
-            this.lvwListaVentas.Size = new System.Drawing.Size(319, 453);
+            this.lvwListaVentas.Size = new System.Drawing.Size(680, 453);
             this.lvwListaVentas.TabIndex = 0;
             this.lvwListaVentas.UseCompatibleStateImageBehavior = false;
             this.lvwListaVentas.View = System.Windows.Forms.View.Details;
@@ -54,16 +55,18 @@ namespace FormularioTP3
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "ID";
+            this.columnHeader1.Text = "Numero de Venta";
+            this.columnHeader1.Width = 190;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Fecha y Hora";
-            this.columnHeader2.Width = 160;
+            this.columnHeader2.Width = 320;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Saldo";
+            this.columnHeader3.Width = 80;
             // 
             // btnCancelar
             // 

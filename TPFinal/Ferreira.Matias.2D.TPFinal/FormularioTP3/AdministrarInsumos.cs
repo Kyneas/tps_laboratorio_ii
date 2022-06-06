@@ -30,8 +30,15 @@ namespace FormularioTP3
 
         private void AdministrarInsumos_Load(object sender, EventArgs e)
         {
-            ListarProductos();
-            DesactivarBotonesYTextBoxDeParteEliminar();
+            try
+            {
+                ListarProductos();
+                DesactivarBotonesYTextBoxDeParteEliminar();
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
 
         private void DesactivarBotonesYTextBoxDeParteEliminar()
@@ -47,33 +54,54 @@ namespace FormularioTP3
 
         private void lvwListaProducto_MouseUp(object sender, MouseEventArgs e)
         {
-            if (lvwListaProducto.SelectedItems.Count == 0)
+            try
             {
-                DesactivarBotonesYTextBoxDeParteEliminar();
+                if (lvwListaProducto.SelectedItems.Count == 0)
+                {
+                    DesactivarBotonesYTextBoxDeParteEliminar();
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
         private void lvwListaProducto_Click(object sender, EventArgs e)
         {
-            if (lvwListaProducto.SelectedItems.Count > 0)
+            try
             {
-                btnEliminar.Enabled = true;
-                btnAgregarStock.Enabled = true;
-                btnModificarPrecio.Enabled = true;
-                txtAgregarStock.ReadOnly = false;
-                txtModificarPrecio.ReadOnly = false;
-                productoSeleccionado = Producto.ProductoPorId(int.Parse(lvwListaProducto.SelectedItems[0].Text), Sistema.listaProductos);
+                if (lvwListaProducto.SelectedItems.Count > 0)
+                {
+                    btnEliminar.Enabled = true;
+                    btnAgregarStock.Enabled = true;
+                    btnModificarPrecio.Enabled = true;
+                    txtAgregarStock.ReadOnly = false;
+                    txtModificarPrecio.ReadOnly = false;
+                    productoSeleccionado = Producto.ProductoPorId(int.Parse(lvwListaProducto.SelectedItems[0].Text), Sistema.listaProductos);
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Confirma que quiere borrar el producto?", "Confirmacion", MessageBoxButtons.YesNo) ==
-                DialogResult.Yes)
+            try
             {
-                Sistema.listaProductos.Remove(productoSeleccionado);
-                ListarProductos();
-                DesactivarBotonesYTextBoxDeParteEliminar();
+                if (MessageBox.Show("Confirma que quiere borrar el producto?", "Confirmacion", MessageBoxButtons.YesNo) ==
+                DialogResult.Yes)
+                {
+                    Sistema.EliminarProducto(productoSeleccionado);
+                    ListarProductos();
+                    DesactivarBotonesYTextBoxDeParteEliminar();
+                }
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
             }
         }
 
@@ -81,16 +109,7 @@ namespace FormularioTP3
         {
             try
             {
-                if (txtModificarPrecio.Text == String.Empty)
-                {
-                    throw new ParametrosVaciosException("Ingrese un precio");
-                }
-                if (!float.TryParse(txtModificarPrecio.Text, out float precio) || precio >= 10000 || precio <= 0)
-                {
-                    throw new DatoInvalidoException("Ingrese un precio valido");
-                }
-
-                productoSeleccionado.Precio = precio;
+                productoSeleccionado.Precio = Producto.ValidarPrecio(txtModificarPrecio.Text);
                 ListarProductos();
                 MessageBox.Show("Precio modificado con exito");
                 DesactivarBotonesYTextBoxDeParteEliminar();
@@ -117,16 +136,7 @@ namespace FormularioTP3
         {
             try
             {
-                if (txtAgregarStock.Text == String.Empty)
-                {
-                    throw new ParametrosVaciosException("Ingrese un stock");
-                }
-                if (!int.TryParse(txtAgregarStock.Text, out int stock) || stock >= 1000 || stock < 0)
-                {
-                    throw new DatoInvalidoException("Ingrese un stock valido");
-                }
-
-                productoSeleccionado.Stock = stock;
+                productoSeleccionado.Stock = Producto.ValidarStock(txtAgregarStock.Text);
                 ListarProductos();
                 MessageBox.Show("Stock modificado con exito");
                 DesactivarBotonesYTextBoxDeParteEliminar();
@@ -153,16 +163,7 @@ namespace FormularioTP3
         {
             try
             {
-                if (txtNombre.Text == String.Empty || txtPrecio.Text == String.Empty || txtStock.Text == String.Empty)
-                {
-                    throw new ParametrosVaciosException("Ningun campo puede estar vacio");
-                }
-                if (!int.TryParse(txtStock.Text, out int stock) || stock >= 1000 || stock < 0 ||
-                    !float.TryParse(txtPrecio.Text, out float precio) || precio >= 10000 || precio <= 0)
-                {
-                    throw new DatoInvalidoException("Ingrese un valor valido");
-                }
-                Sistema.AgregarNuevoProducto(txtNombre.Text, precio, stock);
+                Sistema.AgregarNuevoProducto(txtNombre.Text, Producto.ValidarPrecio(txtPrecio.Text), Producto.ValidarStock(txtStock.Text));
                 MessageBox.Show("Producto agregado con exito");
                 ListarProductos();
             }
