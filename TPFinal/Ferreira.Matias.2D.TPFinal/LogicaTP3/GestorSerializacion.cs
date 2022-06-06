@@ -15,8 +15,7 @@ namespace LogicaTP3
 
         static GestorSerializacion()
         {
-            DirectoryInfo info = Directory.CreateDirectory($"{AppDomain.CurrentDomain.BaseDirectory}\\Archivos_Serializados\\");
-            rutaBase = info.FullName;
+            rutaBase = AppDomain.CurrentDomain.BaseDirectory;
         }
 
         public static void Serializar(string nombreArchivo, T dato)
