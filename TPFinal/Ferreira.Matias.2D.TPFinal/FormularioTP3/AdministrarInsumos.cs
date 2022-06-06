@@ -18,7 +18,9 @@ namespace FormularioTP3
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Muestro en la ListView todos los productos del sistema
+        /// </summary>
         public void ListarProductos()
         {
             lvwListaProducto.Items.Clear();
@@ -40,7 +42,9 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// Impide al usuario modificar un dato
+        /// </summary>
         private void DesactivarBotonesYTextBoxDeParteEliminar()
         {
             btnEliminar.Enabled = false;
@@ -51,7 +55,11 @@ namespace FormularioTP3
             txtAgregarStock.ReadOnly = true;
             txtModificarPrecio.ReadOnly = true;
         }
-
+        /// <summary>
+        /// Desactivo los imputs cuando no hay nada seleccionado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lvwListaProducto_MouseUp(object sender, MouseEventArgs e)
         {
             try
@@ -86,7 +94,11 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// Elimino el producto del sistema previa confirmacion del usuario y guardo los cambios en el archivo de datos de productos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
@@ -104,7 +116,11 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// En caso de ser un precio valido, lo actualizo, sino muestro el error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarPrecio_Click(object sender, EventArgs e)
         {
             try
@@ -131,7 +147,11 @@ namespace FormularioTP3
                 txtModificarPrecio.Text = String.Empty;
             }
         }
-
+        /// <summary>
+        /// En caso de ser un stock valido, lo actualizo, sino muestro el error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarStock_Click(object sender, EventArgs e)
         {
             try
@@ -158,7 +178,11 @@ namespace FormularioTP3
                 txtAgregarStock.Text = String.Empty;
             }
         }
-
+        /// <summary>
+        /// De ser posible agrego un nuevo producto, sino muestro el error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCrearNuevoProducto_Click(object sender, EventArgs e)
         {
             try

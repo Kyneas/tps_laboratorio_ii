@@ -34,7 +34,9 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// Muestro todas las ventas efectuadas
+        /// </summary>
         private void ListarVentas()
         {
             lvwListaVentas.Items.Clear();
@@ -43,7 +45,11 @@ namespace FormularioTP3
                 LogicaForms.AgregarFilaAListView(lvwListaVentas, item.IdVenta.ToString(), item.FechaVenta.ToString("MM/dd/yyyy h:mm tt"), item.Saldo.ToString());
             }
         }
-
+        /// <summary>
+        /// Muestro los detalles de la venta seleccionada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lvwListaVentas_Click(object sender, EventArgs e)
         {
             try

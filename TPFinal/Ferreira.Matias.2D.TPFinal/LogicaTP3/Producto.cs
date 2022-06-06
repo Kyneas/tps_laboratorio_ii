@@ -79,7 +79,12 @@ namespace LogicaTP3
                 throw new Exception("Error al escribir el archivo con el ultimo id de productos", ex);
             }
         }
-
+        /// <summary>
+        /// Retorna la direccion de memoria de un producto segun un id en una lista
+        /// </summary>
+        /// <param name="id">Id a buscar</param>
+        /// <param name="lista">Lista donde se hara la busqueda</param>
+        /// <returns>El producto o null en caso de no existir</returns>
         public static Producto ProductoPorId(int id, List<Producto> lista)
         {
             foreach (Producto producto in lista)

@@ -28,7 +28,9 @@ namespace FormularioTP3
         {
             this.Dispose();
         }
-
+        /// <summary>
+        /// Muestra todos los productos disponibles para la venta, su precio y stock
+        /// </summary>
         public void ListarProductosParaLaVenta()
         {
             lvwListaProductosParaVenta.Items.Clear();
@@ -37,7 +39,9 @@ namespace FormularioTP3
                 LogicaForms.AgregarFilaAListView(lvwListaProductosParaVenta, producto.IdProducto.ToString(), producto.Nombre, producto.Precio.ToString(), producto.Stock.ToString());
             }
         }
-
+        /// <summary>
+        /// Muestra todos los productos pedidos y la cantidad
+        /// </summary>
         public void ListarProductosPedidos()
         {
             lvwListaProductosPedidos.Items.Clear();
@@ -83,7 +87,11 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// Agrega mas cantidad del producto pedido o lo agrega a la lista de productos pedidos
+        /// </summary>
+        /// <param name="productoSistema"></param>
+        /// <param name="productoPedido"></param>
         private void AgregarOSumarProducto(Producto productoSistema, Producto productoPedido)
         {
             if (productoPedido is not null)
@@ -116,7 +124,11 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// Resta la cantidad del producto seleccionado o directamente lo elimina en caso de ser el ultimo
+        /// </summary>
+        /// <param name="productoSistema"></param>
+        /// <param name="productoPedido"></param>
         private void RestarOQuitarProductos(Producto productoSistema, Producto productoPedido)
         {
             if (productoPedido.Cantidad == 1)
@@ -168,7 +180,10 @@ namespace FormularioTP3
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
-
+        /// <summary>
+        /// Calcula el saldo todal del pedido
+        /// </summary>
+        /// <returns></returns>
         private float CalcularSaldo()
         {
             float saldoTotal = 0;
@@ -194,7 +209,6 @@ namespace FormularioTP3
             if (productoSistema.Stock == 0)
                 btnMas.Enabled = false;
         }
-
         private void ActulizarStockSistema()
         {
             foreach (Producto item in copiaListaProductosDeSistema)
@@ -204,7 +218,11 @@ namespace FormularioTP3
                 productoSistema.Stock = item.Stock;
             }
         }
-
+        /// <summary>
+        /// Realizo la venta y actualizo el stock en el sistema
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirmarVenta_Click(object sender, EventArgs e)
         {
             try

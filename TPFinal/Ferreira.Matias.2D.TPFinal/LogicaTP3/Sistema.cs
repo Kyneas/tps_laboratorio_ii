@@ -19,7 +19,9 @@ namespace LogicaTP3
             CargaInicialProductos();
             CargaInicialVentas();
         }
-
+        /// <summary>
+        /// Lee los datos de productos de un archivo xml, de no exitir hardcodea los datos
+        /// </summary>
         private static void CargaInicialProductos()
         {
             try
@@ -71,13 +73,21 @@ namespace LogicaTP3
         {
             listaVentas = GestorSerializacion<List<Venta>>.Deserializar("listaVentas");
         }
-
+        /// <summary>
+        /// Agrega el producto en el sistema y guarda los cambios
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <param name="precio"></param>
+        /// <param name="stock"></param>
         public static void AgregarNuevoProducto(string nombre, float precio, int stock)
         {
             listaProductos.Add(new Producto(nombre, precio, stock));
             GuardarProductos();
         }
-
+        /// <summary>
+        /// Elimina el producto del sistema y guarda los cambios
+        /// </summary>
+        /// <param name="producto"></param>
         public static void EliminarProducto(Producto producto)
         {
             listaProductos.Remove(producto);
@@ -93,7 +103,10 @@ namespace LogicaTP3
             }
             return listaCopia;
         }
-
+        /// <summary>
+        /// Agrega ;a venta realizada a la lista del sistema y guarda los cambios
+        /// </summary>
+        /// <param name="venta"></param>
         public static void AgregarVenta(Venta venta)
         {
             listaVentas.Add(venta);

@@ -9,6 +9,10 @@ namespace FormularioTP3
 {
     public static class LogicaForms
     {
+        /// <summary>
+        /// Cierra todos los formularios contenidos dentro del panel
+        /// </summary>
+        /// <param name="panel"></param>
         public static void CerrarFormulariosDelPanel(Panel panel)
         {
             foreach (Form item in panel.Controls)
@@ -30,7 +34,10 @@ namespace FormularioTP3
             ListViewItem item = new ListViewItem(fila);
             lista.Items.Add(item);
         }
-
+        /// <summary>
+        /// Muestro todas las excepciones y las inner dentro de un unico MessageBox
+        /// </summary>
+        /// <param name="ex"></param>
         public static void MostrarExcepciones(Exception ex)
         {
             StringBuilder sb = new StringBuilder();
