@@ -59,7 +59,7 @@ namespace TP1
             {
                 MessageBox.Show("Debe ingresar los operandos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!int.TryParse(operando1, out _) || !int.TryParse(operando2, out _))
+            else if (!double.TryParse(operando1, out _) || !double.TryParse(operando2, out _))
             {
                 MessageBox.Show("Ingrese un valor valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

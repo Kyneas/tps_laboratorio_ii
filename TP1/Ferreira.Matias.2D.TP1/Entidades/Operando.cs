@@ -12,17 +12,17 @@ namespace Entidades
         /// <summary>
         /// Contruye el objeto inicializandolo en 0
         /// </summary>
-        private Operando()
+        private Operando():this(0)
         {
-            this.numero = 0;
+            
         }
         /// <summary>
         /// Construye el objeto inicializando con el valor brindado
         /// </summary>
         /// <param name="numero"></param>
-        public Operando(double numero) : this(numero.ToString())
+        public Operando(double numero)
         {
-            
+            this.numero = numero;
         }
         /// <summary>
         /// Construye el objeto y define su atributo por medio de la propiedad
@@ -80,11 +80,12 @@ namespace Entidades
         /// <returns>Retorna el numero convertido de ser posible, caso contrario "Valor invalido"</returns>
         public static string DecimalBinario(double numero)
         {
-            if (numero > int.MaxValue)
+            if (numero > int.MaxValue || numero < int.MinValue)
             {
-                return "Valor invalido";
+                return "Valor inválido";
             }
             int numeroAOperar = (int)Math.Abs(numero);
+            
             if (numeroAOperar == 0)
             {
                 return "0";
