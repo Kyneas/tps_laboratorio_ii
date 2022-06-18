@@ -1,0 +1,45 @@
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.exe
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.deps.json
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.runtimeconfig.json
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.runtimeconfig.dev.json
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.dll
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\ref\FormularioTP3.dll
+D:\UTN\Programacion 2\TP3\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.pdb
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.AssemblyReference.cache
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.FormPrincipal.resources
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.GenerateResource.cache
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.AssemblyInfoInputs.cache
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.AssemblyInfo.cs
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.CoreCompileInputs.cache
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.dll
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\ref\FormularioTP3.dll
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.pdb
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.genruntimeconfig.cache
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.AdministrarInsumos.resources
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.NuevaVenta.resources
+D:\UTN\Programacion 2\TP3\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.Ventas.resources
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.exe
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.deps.json
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.runtimeconfig.json
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.runtimeconfig.dev.json
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\ref\FormularioTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\FormularioTP3.pdb
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\LogicaTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\bin\Debug\net5.0-windows\LogicaTP3.pdb
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.AssemblyReference.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.AdministrarInsumos.resources
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.FormPrincipal.resources
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.NuevaVenta.resources
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.GenerateResource.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.AssemblyInfoInputs.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.AssemblyInfo.cs
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.CoreCompileInputs.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.csproj.CopyComplete
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\ref\FormularioTP3.dll
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.pdb
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.genruntimeconfig.cache
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP3.FormVentas.resources

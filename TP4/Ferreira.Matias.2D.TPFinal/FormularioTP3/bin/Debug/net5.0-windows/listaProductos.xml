@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProducto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Producto>
+    <IdProducto>1</IdProducto>
+    <Nombre>Alfajor</Nombre>
+    <Precio>60</Precio>
+    <Cantidad>0</Cantidad>
+    <Stock>0</Stock>
+  </Producto>
+  <Producto>
+    <IdProducto>2</IdProducto>
+    <Nombre>Cigarrillos</Nombre>
+    <Precio>100</Precio>
+    <Cantidad>0</Cantidad>
+    <Stock>5</Stock>
+  </Producto>
+  <Producto>
+    <IdProducto>3</IdProducto>
+    <Nombre>Lapicera</Nombre>
+    <Precio>40</Precio>
+    <Cantidad>0</Cantidad>
+    <Stock>10</Stock>
+  </Producto>
+  <Producto>
+    <IdProducto>4</IdProducto>
+    <Nombre>Chupetin</Nombre>
+    <Precio>10</Precio>
+    <Cantidad>0</Cantidad>
+    <Stock>10</Stock>
+  </Producto>
+</ArrayOfProducto>
