@@ -50,7 +50,7 @@ namespace TP1
             this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbOperador.FormattingEnabled = true;
             this.cmbOperador.Items.AddRange(new object[] {
-            "",
+            " ",
             "+",
             "-",
             "/",

@@ -59,12 +59,16 @@ namespace TP1
             {
                 MessageBox.Show("Debe ingresar los operandos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (string.IsNullOrEmpty(operador))
+            else if (!int.TryParse(operando1, out _) || !int.TryParse(operando2, out _))
             {
-                MessageBox.Show("Debe ingresar un operador", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese un valor valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else 
+            else
             {
+                if (cmbOperador.Text == " ")
+                {
+                    cmbOperador.Text = "+";
+                }
                 string oper1 = operando1.Replace('.',',');
                 string oper2 = operando2.Replace('.',',');
                 resultado = (Operar(oper1, oper2, operador)).ToString();
@@ -86,6 +90,7 @@ namespace TP1
         {
             Operando operando1 = new Operando(numero1);
             Operando operando2 = new Operando(numero2);
+
             char operador = char.Parse(stOperador);
 
 
