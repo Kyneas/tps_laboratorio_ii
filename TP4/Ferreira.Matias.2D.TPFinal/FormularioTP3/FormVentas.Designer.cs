@@ -34,6 +34,8 @@ namespace FormularioTP4
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblSaldoEnCaja = new System.Windows.Forms.Label();
+            this.btnRetirar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvwListaVentas
@@ -70,6 +72,7 @@ namespace FormularioTP4
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(795, 569);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(89, 37);
@@ -78,11 +81,35 @@ namespace FormularioTP4
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // lblSaldoEnCaja
+            // 
+            this.lblSaldoEnCaja.AutoSize = true;
+            this.lblSaldoEnCaja.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSaldoEnCaja.Location = new System.Drawing.Point(112, 540);
+            this.lblSaldoEnCaja.Name = "lblSaldoEnCaja";
+            this.lblSaldoEnCaja.Size = new System.Drawing.Size(128, 30);
+            this.lblSaldoEnCaja.TabIndex = 2;
+            this.lblSaldoEnCaja.Text = "$SaldoTotal";
+            // 
+            // btnRetirar
+            // 
+            this.btnRetirar.Enabled = false;
+            this.btnRetirar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRetirar.Location = new System.Drawing.Point(387, 535);
+            this.btnRetirar.Name = "btnRetirar";
+            this.btnRetirar.Size = new System.Drawing.Size(120, 44);
+            this.btnRetirar.TabIndex = 3;
+            this.btnRetirar.Text = "Hacer Retiro";
+            this.btnRetirar.UseVisualStyleBackColor = true;
+            this.btnRetirar.Click += new System.EventHandler(this.btnRetirar_Click);
+            // 
             // FormVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 618);
+            this.Controls.Add(this.btnRetirar);
+            this.Controls.Add(this.lblSaldoEnCaja);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lvwListaVentas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -90,6 +117,7 @@ namespace FormularioTP4
             this.Text = "Ventas";
             this.Load += new System.EventHandler(this.Ventas_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -100,5 +128,7 @@ namespace FormularioTP4
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblSaldoEnCaja;
+        private System.Windows.Forms.Button btnRetirar;
     }
 }

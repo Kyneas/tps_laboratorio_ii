@@ -70,6 +70,7 @@ namespace FormularioTP4
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGuardar.Location = new System.Drawing.Point(39, 306);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(110, 46);
@@ -121,6 +122,7 @@ namespace FormularioTP4
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(169, 306);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(110, 46);
@@ -146,7 +148,6 @@ namespace FormularioTP4
             this.Name = "FrmAlta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAlta";
-            this.Load += new System.EventHandler(this.FrmAlta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nupPrecio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupStock)).EndInit();
             this.ResumeLayout(false);

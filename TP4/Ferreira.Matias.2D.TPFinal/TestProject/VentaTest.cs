@@ -8,7 +8,7 @@ namespace TestProject
     public class VentaTest
     {
         [TestMethod]
-        public void AumentarId_VerificaQueSeAumenteElIdLuegoDeCrearOtroProducto_DeberiaIncrmentarEnUnoElValorDelUltimoIdDelArchivoTxt()
+        public void AumentarId_VerificaQueSeAumenteElIdLuegoDeCrearOtraVenta_DeberiaIncrmentarEnUnoElValorDelUltimoIdDelArchivoTxt()
         {
             //Arrange
             List<Producto> lista = new List<Producto>();

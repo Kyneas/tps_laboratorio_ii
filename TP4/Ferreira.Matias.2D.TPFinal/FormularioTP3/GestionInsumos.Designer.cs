@@ -52,6 +52,7 @@ namespace FormularioTP4
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(787, 566);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(97, 40);
@@ -62,6 +63,7 @@ namespace FormularioTP4
             // 
             // btnModificar
             // 
+            this.btnModificar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnModificar.Location = new System.Drawing.Point(130, 479);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(110, 55);
@@ -72,6 +74,7 @@ namespace FormularioTP4
             // 
             // btnAlta
             // 
+            this.btnAlta.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAlta.Location = new System.Drawing.Point(359, 479);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(110, 55);
@@ -82,6 +85,7 @@ namespace FormularioTP4
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEliminar.Location = new System.Drawing.Point(625, 479);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(110, 55);

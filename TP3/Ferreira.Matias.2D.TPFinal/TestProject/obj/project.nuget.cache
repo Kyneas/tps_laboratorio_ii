@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CtYHI3O9pLn5Ri1MOar1LZ4HxcwUsXjCAJBMWXiaM5/AQLreQdnpOdNjCF3hSr2iwaxpowMBYvu7Ul7euUFREw==",
+  "dgSpecHash": "EV54V7nrju9aPgd8A2mHBZ1NQxKaBYy22qgiwSsQIU1M23GtWSgYWdOMliOgZU18NfHfMndY3pfGGMwh3mOKzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matias\\src\\Programacion-2\\tps_laboratorio_ii\\TPFinal\\Ferreira.Matias.2D.TPFinal\\TestProject\\TestProject.csproj",
+  "projectFilePath": "C:\\Users\\Matias\\src\\Programacion-2\\tps_laboratorio_ii\\TP3\\Ferreira.Matias.2D.TPFinal\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matias\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Matias\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

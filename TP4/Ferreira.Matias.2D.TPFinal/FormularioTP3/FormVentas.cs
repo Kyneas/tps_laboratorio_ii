@@ -28,6 +28,8 @@ namespace FormularioTP4
             try
             {
                 ListarVentas();
+                this.lblSaldoEnCaja.Text = $"Saldo Total: {Sistema.SaldoTotalEnCaja}";
+                ValidarSiHayQuePermitirRetiro();
             }
             catch (Exception ex)
             {
@@ -57,12 +59,34 @@ namespace FormularioTP4
                 if (lvwListaVentas.SelectedItems.Count > 0)
                 {
                     int idVenta = int.Parse(lvwListaVentas.SelectedItems[0].Text);
-                    MessageBox.Show(Venta.VentaPorId(idVenta, Sistema.listaVentas).ToString());
+                    MessageBox.Show(idVenta.VentaPorId(Sistema.listaVentas).ToString());
                 }
             }
             catch (Exception ex)
             {
                 LogicaForms.MostrarExcepciones(ex);
+            }
+        }
+
+        private void btnRetirar_Click(object sender, EventArgs e)
+        {
+            FormHacerRetiro retiro = new FormHacerRetiro();
+            if (retiro.ShowDialog() == DialogResult.Yes)
+            {
+                this.lblSaldoEnCaja.Text = $"Saldo Total: {Sistema.SaldoTotalEnCaja}";
+                ValidarSiHayQuePermitirRetiro();
+            }
+        }
+
+        public void ValidarSiHayQuePermitirRetiro()
+        {
+            if (Sistema.SaldoTotalEnCaja >= 1)
+            {
+                this.btnRetirar.Enabled = true;
+            }
+            else
+            {
+                this.btnRetirar.Enabled = false;
             }
         }
     }

@@ -1,3 +1,693 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVenta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Venta>
+    <IdVenta>1</IdVenta>
+    <FechaVenta>2022-06-18T02:19:54.612712-03:00</FechaVenta>
+    <Saldo>500</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>5</Cantidad>
+        <Stock>45</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#5     Cigarrillos                         100   500  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>2</IdVenta>
+    <FechaVenta>2022-06-18T02:19:59.8193074-03:00</FechaVenta>
+    <Saldo>1300</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>13</Cantidad>
+        <Stock>40</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#13    Cigarrillos                         100   1300 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>3</IdVenta>
+    <FechaVenta>2022-06-18T02:23:57.3556622-03:00</FechaVenta>
+    <Saldo>40</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>10</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Lapicera                            40    40   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>4</IdVenta>
+    <FechaVenta>2022-06-18T02:24:28.4837593-03:00</FechaVenta>
+    <Saldo>80</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>9</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Lapicera                            40    80   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>5</IdVenta>
+    <FechaVenta>2022-06-18T02:25:53.1651765-03:00</FechaVenta>
+    <Saldo>40</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>7</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Lapicera                            40    40   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>6</IdVenta>
+    <FechaVenta>2022-06-18T02:42:06.0835302-03:00</FechaVenta>
+    <Saldo>200</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>45</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Cigarrillos                         100   200  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>7</IdVenta>
+    <FechaVenta>2022-06-18T02:42:11.010271-03:00</FechaVenta>
+    <Saldo>300</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>43</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Cigarrillos                         100   300  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>8</IdVenta>
+    <FechaVenta>2022-06-18T02:42:16.5466887-03:00</FechaVenta>
+    <Saldo>300</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>40</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Cigarrillos                         100   300  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>9</IdVenta>
+    <FechaVenta>2022-06-18T02:44:42.6720626-03:00</FechaVenta>
+    <Saldo>200</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>37</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Cigarrillos                         100   200  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>10</IdVenta>
+    <FechaVenta>2022-06-18T18:36:21.8467072-03:00</FechaVenta>
+    <Saldo>30</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>4</IdProducto>
+        <Nombre>Chupetin</Nombre>
+        <Precio>10</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>10</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Chupetin                            10    30   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>11</IdVenta>
+    <FechaVenta>2022-06-18T18:43:13.9427048-03:00</FechaVenta>
+    <Saldo>30</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>4</IdProducto>
+        <Nombre>Chupetin</Nombre>
+        <Precio>10</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>7</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Chupetin                            10    30   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>12</IdVenta>
+    <FechaVenta>2022-06-18T18:43:20.3562621-03:00</FechaVenta>
+    <Saldo>500</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>5</Cantidad>
+        <Stock>35</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#5     Cigarrillos                         100   500  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>13</IdVenta>
+    <FechaVenta>2022-06-18T19:06:18.2460226-03:00</FechaVenta>
+    <Saldo>340</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>30</Stock>
+      </Producto>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>6</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Cigarrillos                         100   300  
+#1     Lapicera                            40    40   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>14</IdVenta>
+    <FechaVenta>2022-06-18T19:06:22.6964195-03:00</FechaVenta>
+    <Saldo>40</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>5</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Lapicera                            40    40   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>15</IdVenta>
+    <FechaVenta>2022-06-18T19:07:16.0751245-03:00</FechaVenta>
+    <Saldo>100</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>27</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Cigarrillos                         100   100  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>16</IdVenta>
+    <FechaVenta>2022-06-18T19:23:22.7420254-03:00</FechaVenta>
+    <Saldo>1460</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>4</Cantidad>
+        <Stock>4</Stock>
+      </Producto>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>13</Cantidad>
+        <Stock>26</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#4     Lapicera                            40    160  
+#13    Cigarrillos                         100   1300 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>17</IdVenta>
+    <FechaVenta>2022-06-18T19:23:28.4743699-03:00</FechaVenta>
+    <Saldo>100</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>13</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Cigarrillos                         100   100  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>18</IdVenta>
+    <FechaVenta>2022-06-18T19:23:42.3868087-03:00</FechaVenta>
+    <Saldo>600</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>6</Cantidad>
+        <Stock>12</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#6     Cigarrillos                         100   600  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>19</IdVenta>
+    <FechaVenta>2022-06-18T19:25:16.4513316-03:00</FechaVenta>
+    <Saldo>1400</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>14</Cantidad>
+        <Stock>56</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#14    Cigarrillos                         100   1400 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>20</IdVenta>
+    <FechaVenta>2022-06-18T19:25:22.4933674-03:00</FechaVenta>
+    <Saldo>80</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>45</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Lapicera                            40    80   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>21</IdVenta>
+    <FechaVenta>2022-06-18T19:25:26.4061454-03:00</FechaVenta>
+    <Saldo>100</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>42</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Cigarrillos                         100   100  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>22</IdVenta>
+    <FechaVenta>2022-06-18T19:39:23.7362496-03:00</FechaVenta>
+    <Saldo>30</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>4</IdProducto>
+        <Nombre>Chupetin</Nombre>
+        <Precio>10</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>4</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Chupetin                            10    30   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>23</IdVenta>
+    <FechaVenta>2022-06-18T19:39:27.1267145-03:00</FechaVenta>
+    <Saldo>40</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>1</Cantidad>
+        <Stock>43</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#1     Lapicera                            40    40   
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>24</IdVenta>
+    <FechaVenta>2022-06-18T19:41:30.2748686-03:00</FechaVenta>
+    <Saldo>1600</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>3</IdProducto>
+        <Nombre>Lapicera</Nombre>
+        <Precio>40</Precio>
+        <Cantidad>40</Cantidad>
+        <Stock>42</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#40    Lapicera                            40    1600 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>25</IdVenta>
+    <FechaVenta>2022-06-18T19:54:30.6393425-03:00</FechaVenta>
+    <Saldo>1600</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>16</Cantidad>
+        <Stock>41</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#16    Cigarrillos                         100   1600 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>26</IdVenta>
+    <FechaVenta>2022-06-18T19:55:24.4393014-03:00</FechaVenta>
+    <Saldo>1600</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>16</Cantidad>
+        <Stock>25</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#16    Cigarrillos                         100   1600 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>27</IdVenta>
+    <FechaVenta>2022-06-18T20:07:27.783885-03:00</FechaVenta>
+    <Saldo>1500</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>15</Cantidad>
+        <Stock>45</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#15    Cigarrillos                         100   1500 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>28</IdVenta>
+    <FechaVenta>2022-06-18T20:13:33.5075872-03:00</FechaVenta>
+    <Saldo>1200</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>12</Cantidad>
+        <Stock>30</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#12    Cigarrillos                         100   1200 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>29</IdVenta>
+    <FechaVenta>2022-06-18T20:16:06.5260907-03:00</FechaVenta>
+    <Saldo>1630</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>4</IdProducto>
+        <Nombre>Chupetin</Nombre>
+        <Precio>10</Precio>
+        <Cantidad>3</Cantidad>
+        <Stock>45</Stock>
+      </Producto>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>16</Cantidad>
+        <Stock>18</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#3     Chupetin                            10    30   
+#16    Cigarrillos                         100   1600 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>30</IdVenta>
+    <FechaVenta>2022-06-18T20:17:32.7039908-03:00</FechaVenta>
+    <Saldo>1700</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>17</Cantidad>
+        <Stock>56</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#17    Cigarrillos                         100   1700 
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>31</IdVenta>
+    <FechaVenta>2022-06-18T20:19:04.8385801-03:00</FechaVenta>
+    <Saldo>600</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>6</Cantidad>
+        <Stock>39</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#6     Cigarrillos                         100   600  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>32</IdVenta>
+    <FechaVenta>2022-06-18T20:19:52.4622154-03:00</FechaVenta>
+    <Saldo>200</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>33</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Cigarrillos                         100   200  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>33</IdVenta>
+    <FechaVenta>2022-06-18T21:46:10.3860398-03:00</FechaVenta>
+    <Saldo>800</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>8</Cantidad>
+        <Stock>31</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#8     Cigarrillos                         100   800  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>34</IdVenta>
+    <FechaVenta>2022-06-18T21:46:27.6335078-03:00</FechaVenta>
+    <Saldo>800</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>8</Cantidad>
+        <Stock>23</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#8     Cigarrillos                         100   800  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>35</IdVenta>
+    <FechaVenta>2022-06-18T22:52:59.0672607-03:00</FechaVenta>
+    <Saldo>400</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>2</IdProducto>
+        <Nombre>Cigarrillos</Nombre>
+        <Precio>100</Precio>
+        <Cantidad>4</Cantidad>
+        <Stock>150</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#4     Cigarrillos                         100   400  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>36</IdVenta>
+    <FechaVenta>2022-06-19T14:46:30.8390286-03:00</FechaVenta>
+    <Saldo>134</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>7</IdProducto>
+        <Nombre>Encendedor</Nombre>
+        <Precio>67</Precio>
+        <Cantidad>2</Cantidad>
+        <Stock>6</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#2     Encendedor                          67    134  
+------------------------------
+</Pedido>
+  </Venta>
+  <Venta>
+    <IdVenta>37</IdVenta>
+    <FechaVenta>2022-06-19T14:47:36.169594-03:00</FechaVenta>
+    <Saldo>40</Saldo>
+    <ListaProductos>
+      <Producto>
+        <IdProducto>4</IdProducto>
+        <Nombre>Chupetin</Nombre>
+        <Precio>10</Precio>
+        <Cantidad>4</Cantidad>
+        <Stock>42</Stock>
+      </Producto>
+    </ListaProductos>
+    <Pedido>------------------------------
+#4     Chupetin                            10    40   
+------------------------------
+</Pedido>
+  </Venta>
 </ArrayOfVenta>

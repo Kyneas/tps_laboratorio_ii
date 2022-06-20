@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = TestProject
-build_property.ProjectDir = C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TPFinal\Ferreira.Matias.2D.TPFinal\TestProject\
+build_property.ProjectDir = C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TP3\Ferreira.Matias.2D.TPFinal\TestProject\

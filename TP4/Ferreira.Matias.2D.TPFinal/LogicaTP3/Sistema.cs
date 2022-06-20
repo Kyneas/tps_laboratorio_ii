@@ -6,33 +6,27 @@ using System.Threading.Tasks;
 
 namespace LogicaTP4
 {
+    public delegate void DelegadoVerificarSaldo();
     public class Sistema
     {
-        public static List<Producto> listaProductos;
+        public static event DelegadoVerificarSaldo saldoAlcanzado;
         public static List<Venta> listaVentas;
+        private static float saldoTotalEnCaja;
+
+        public static float SaldoTotalEnCaja { get => saldoTotalEnCaja; set => saldoTotalEnCaja = ValidarRetiro(value); }
+
+        private static float ValidarRetiro(float value)
+        {
+            if (value <= saldoTotalEnCaja)
+                return saldoTotalEnCaja -= value;
+            return saldoTotalEnCaja;
+        }
 
         static Sistema()
         {
-
-            //listaProductos = new List<Producto>();
-            //listaProductos = ProductoAccesoDatos.Leer();
             listaVentas = new List<Venta>();
-            CargaInicialProductos();
             CargaInicialVentas();
-        }
-        /// <summary>
-        /// Lee los datos de productos de un archivo xml, de no exitir hardcodea los datos
-        /// </summary>
-        private static void CargaInicialProductos()
-        {
-            try
-            {
-                listaProductos = ProductoAccesoDatos.Leer();
-            }
-            catch(Exception)
-            {
-                throw;
-            }
+            saldoTotalEnCaja = 0;
         }
 
         private static void CargaInicialVentas()
@@ -78,6 +72,14 @@ namespace LogicaTP4
         public static void AgregarVenta(Venta venta)
         {
             listaVentas.Add(venta);
+            saldoTotalEnCaja += venta.Saldo;
+            if (saldoTotalEnCaja >= 1500)
+            {
+                if (saldoAlcanzado is not null)
+                {
+                    saldoAlcanzado.Invoke();
+                }
+            }
             GuardarVentas();
         }
     }

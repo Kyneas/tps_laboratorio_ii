@@ -38,6 +38,8 @@ namespace FormularioTP4
             // 
             // btnNuevaVentana
             // 
+            this.btnNuevaVentana.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNuevaVentana.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnNuevaVentana.Location = new System.Drawing.Point(12, 80);
             this.btnNuevaVentana.Name = "btnNuevaVentana";
             this.btnNuevaVentana.Size = new System.Drawing.Size(242, 108);
@@ -48,6 +50,7 @@ namespace FormularioTP4
             // 
             // btnInsumos
             // 
+            this.btnInsumos.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnInsumos.Location = new System.Drawing.Point(12, 306);
             this.btnInsumos.Name = "btnInsumos";
             this.btnInsumos.Size = new System.Drawing.Size(242, 55);
@@ -58,6 +61,7 @@ namespace FormularioTP4
             // 
             // btbVentas
             // 
+            this.btbVentas.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btbVentas.Location = new System.Drawing.Point(12, 382);
             this.btbVentas.Name = "btbVentas";
             this.btbVentas.Size = new System.Drawing.Size(242, 55);
@@ -68,6 +72,7 @@ namespace FormularioTP4
             // 
             // btnSalir
             // 
+            this.btnSalir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSalir.Location = new System.Drawing.Point(12, 589);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(91, 41);
@@ -97,6 +102,7 @@ namespace FormularioTP4
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.ResumeLayout(false);
 
         }

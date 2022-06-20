@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LogicaTP4;
@@ -21,7 +22,6 @@ namespace FormularioTP4
         {
             InitializeComponent();
             comidaPedida = new List<Producto>();
-            copiaListaProductosDeSistema = Sistema.ClonarLista(Sistema.listaProductos);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -50,11 +50,16 @@ namespace FormularioTP4
                 LogicaForms.AgregarFilaAListView(lvwListaProductosPedidos, producto.IdProducto.ToString(), producto.Nombre, producto.Cantidad.ToString());
             }
         }
+        private void CargarLista()
+        {
+            this.copiaListaProductosDeSistema = ProductoAccesoDatos.Leer();
+        }
 
-        private void NuevaVenta_Load(object sender, EventArgs e)
+        private async void NuevaVenta_Load(object sender, EventArgs e)
         {
             try
             {
+                await Task.Run(()=> { CargarLista();});
                 ListarProductosParaLaVenta();
                 lblSaldoTotal.Text = "Saldo: $0";
             }
@@ -213,9 +218,7 @@ namespace FormularioTP4
         {
             foreach (Producto item in copiaListaProductosDeSistema)
             {
-                int idABuscar = item.IdProducto;
-                Producto productoSistema = Producto.ProductoPorId(idABuscar, Sistema.listaProductos);
-                productoSistema.Stock = item.Stock;
+                ProductoAccesoDatos.Modificar(item);
             }
         }
         /// <summary>
@@ -229,8 +232,8 @@ namespace FormularioTP4
             {
                 ActulizarStockSistema();
                 Venta ventaEfectuada = new Venta(CalcularSaldo(), comidaPedida);
-                Sistema.AgregarVenta(ventaEfectuada);
                 MessageBox.Show(ventaEfectuada.ToString());
+                Sistema.AgregarVenta(ventaEfectuada);
                 this.Dispose();
             }
             catch (Exception ex)

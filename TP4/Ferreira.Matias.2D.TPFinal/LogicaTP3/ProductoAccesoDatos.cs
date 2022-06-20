@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace LogicaTP4
 {
@@ -22,7 +23,7 @@ namespace LogicaTP4
             command.Connection = connection;
         }
 
-        public static List<Producto> Leer()//(int id, string nombre, float precio, int stock, int cantidad)(dataReader["Nombre"].ToString(), Convert.ToInt32(dataReader["ID"])
+        public static List<Producto> Leer()
         {
             List<Producto> productos = new List<Producto>();
             try
@@ -41,36 +42,6 @@ namespace LogicaTP4
                 }
 
                 return productos;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
-        public static Producto LeerPorId(int id)
-        {
-            Producto producto = null;
-            try
-            {
-                command.Parameters.Clear();
-                connection.Open();
-                command.CommandText = $"SELECT * FROM PRODUCTOS WHERE ID_PRODUCTO =@ID";
-                command.Parameters.AddWithValue("@ID", id);
-
-                using (SqlDataReader dataReader = command.ExecuteReader())
-                {
-                    while (dataReader.Read())
-                    {
-                        producto = new Producto(Convert.ToInt32(dataReader["ID_PRODUCTO"]), dataReader["NOMBRE"].ToString(), Convert.ToInt32(dataReader["PRECIO"]),
-                                                Convert.ToInt32(dataReader["STOCK"]), Convert.ToInt32(dataReader["CANTIDAD"]));
-                    }
-                }
-
-                return producto;
             }
             catch (Exception)
             {

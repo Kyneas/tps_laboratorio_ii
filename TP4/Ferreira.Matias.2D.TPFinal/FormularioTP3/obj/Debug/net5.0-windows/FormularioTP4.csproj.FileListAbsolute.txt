@@ -29,3 +29,4 @@ C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TP4\Ferreira.Matias.2D.TPF
 C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TP4\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP4.genruntimeconfig.cache
 C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TP4\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP4.FrmAlta.resources
 C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TP4\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP4.GestionInsumos.resources
+C:\Users\Matias\src\Programacion-2\tps_laboratorio_ii\TP4\Ferreira.Matias.2D.TPFinal\FormularioTP3\obj\Debug\net5.0-windows\FormularioTP4.FormHacerRetiro.resources

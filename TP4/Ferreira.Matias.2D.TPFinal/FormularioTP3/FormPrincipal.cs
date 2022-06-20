@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogicaTP4;
+using System.Threading;
 
 namespace FormularioTP4
 {
     public partial class FormPrincipal : Form
     {
+
+        public void MostrarQueHayMuchaPlataEnLaCaja()
+        {
+            MessageBox.Show("Hay mucho dinero en caja, haga un retiro por favor");
+        }
         public FormPrincipal()
         {
             InitializeComponent();
@@ -74,5 +81,33 @@ namespace FormularioTP4
                 LogicaForms.MostrarExcepciones(ex);
             }
         }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                ProbarConexionABaseDeDatos();
+                Sistema.saldoAlcanzado += MostrarQueHayMuchaPlataEnLaCaja;
+            }
+            catch (Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+                this.btnInsumos.Enabled = false;
+                this.btbVentas.Enabled = false;
+                this.btnNuevaVentana.Enabled = false;
+            }
+        }
+        private void ProbarConexionABaseDeDatos()
+        {
+            try
+            {
+                _ = ProductoAccesoDatos.Leer();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al conectar con la base de datos. Verifique la conexion y vuelva a iniciar el programa", ex);
+            }
+        }
+        
     }
 }

@@ -19,10 +19,10 @@ namespace FormularioTP4
         {
             InitializeComponent();
         }
-        public FrmAlta(int id) : this()
+        public FrmAlta(Producto producto) : this()
         {
-            this.id = id;
-            producto = ProductoAccesoDatos.LeerPorId(id);
+            this.producto = producto;
+            this.id = producto.IdProducto;
             btnGuardar.Text = "Modificar";
             PintarForm();
         }
@@ -31,11 +31,6 @@ namespace FormularioTP4
             txtNombre.Text = producto.Nombre;
             nupPrecio.Value = (decimal)producto.Precio;
             nupStock.Value = (decimal)producto.Stock;
-        }
-
-        private void FrmAlta_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -81,5 +76,6 @@ namespace FormularioTP4
         {
             this.Dispose();
         }
+
     }
 }

@@ -11,6 +11,7 @@ using LogicaTP4;
 
 namespace FormularioTP4
 {
+    public delegate void DelegadoModificar();
     public partial class GestionInsumos : Form
     {
         public GestionInsumos()
@@ -25,14 +26,21 @@ namespace FormularioTP4
 
         private void GestionInsumos_Load(object sender, EventArgs e)
         {
-            RefrescarLista();
-            ModificarDiseñoDataGridView();
+            try
+            {
+                RefrescarLista();
+            }
+            catch(Exception ex)
+            {
+                LogicaForms.MostrarExcepciones(ex);
+            }
         }
         private void RefrescarLista()
         {
             this.dtgvProductos.DataSource = ProductoAccesoDatos.Leer();
             this.dtgvProductos.Update();
             this.dtgvProductos.Refresh();
+            ModificarDiseñoDataGridView();
         }
 
         private void ModificarDiseñoDataGridView()
@@ -50,8 +58,9 @@ namespace FormularioTP4
             if (dtgvProductos.SelectedRows.Count > 0)
             {
                 Producto producto = (Producto)dtgvProductos.CurrentRow.DataBoundItem;
-                FrmAlta alta = new FrmAlta(producto.IdProducto);
-                alta.ShowDialog();
+                FrmAlta alta = new FrmAlta(producto);
+                DialogResult dialogResult = alta.ShowDialog();
+                SeModificoProducto(dialogResult, SeModificoProducto, NoSeModificoProducto);
                 RefrescarLista();
             }
         }
@@ -77,5 +86,26 @@ namespace FormularioTP4
                 }
             }
         }
+
+        public void SeModificoProducto(DialogResult dialogResult, DelegadoModificar seModifico, DelegadoModificar noSeModifico)
+        {
+            if (dialogResult == DialogResult.OK)
+            {
+                seModifico.Invoke();
+            }
+            else
+            {
+                noSeModifico.Invoke();
+            }
+        }
+        public void SeModificoProducto()
+        {
+            MessageBox.Show("El producto fue modificado exitosamente");
+        }
+        public void NoSeModificoProducto()
+        {
+            MessageBox.Show("No hubo cambios en el producto");
+        }
+
     }
 }

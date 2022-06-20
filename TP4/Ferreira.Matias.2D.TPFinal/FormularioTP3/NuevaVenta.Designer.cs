@@ -57,7 +57,7 @@ namespace FormularioTP4
             // btnMas
             // 
             this.btnMas.Enabled = false;
-            this.btnMas.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMas.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMas.Location = new System.Drawing.Point(424, 114);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(77, 77);
@@ -70,7 +70,7 @@ namespace FormularioTP4
             // btnMenos
             // 
             this.btnMenos.Enabled = false;
-            this.btnMenos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMenos.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMenos.Location = new System.Drawing.Point(424, 254);
             this.btnMenos.Name = "btnMenos";
             this.btnMenos.Size = new System.Drawing.Size(77, 77);
@@ -82,6 +82,7 @@ namespace FormularioTP4
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(278, 451);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 65);
@@ -93,6 +94,7 @@ namespace FormularioTP4
             // btnConfirmarVenta
             // 
             this.btnConfirmarVenta.Enabled = false;
+            this.btnConfirmarVenta.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConfirmarVenta.Location = new System.Drawing.Point(470, 451);
             this.btnConfirmarVenta.Name = "btnConfirmarVenta";
             this.btnConfirmarVenta.Size = new System.Drawing.Size(122, 65);
