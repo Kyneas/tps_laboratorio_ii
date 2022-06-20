@@ -72,13 +72,14 @@ namespace FormularioTP4
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCancelar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(795, 569);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(89, 37);
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblSaldoEnCaja
@@ -93,6 +94,7 @@ namespace FormularioTP4
             // 
             // btnRetirar
             // 
+            this.btnRetirar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRetirar.Enabled = false;
             this.btnRetirar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRetirar.Location = new System.Drawing.Point(387, 535);
@@ -100,13 +102,14 @@ namespace FormularioTP4
             this.btnRetirar.Size = new System.Drawing.Size(120, 44);
             this.btnRetirar.TabIndex = 3;
             this.btnRetirar.Text = "Hacer Retiro";
-            this.btnRetirar.UseVisualStyleBackColor = true;
+            this.btnRetirar.UseVisualStyleBackColor = false;
             this.btnRetirar.Click += new System.EventHandler(this.btnRetirar_Click);
             // 
             // FormVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(896, 618);
             this.Controls.Add(this.btnRetirar);
             this.Controls.Add(this.lblSaldoEnCaja);

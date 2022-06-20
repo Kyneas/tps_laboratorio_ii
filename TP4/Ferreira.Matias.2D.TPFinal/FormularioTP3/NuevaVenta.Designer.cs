@@ -48,14 +48,16 @@ namespace FormularioTP4
             // lblSaldoTotal
             // 
             this.lblSaldoTotal.AutoSize = true;
-            this.lblSaldoTotal.Location = new System.Drawing.Point(719, 564);
+            this.lblSaldoTotal.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSaldoTotal.Location = new System.Drawing.Point(681, 506);
             this.lblSaldoTotal.Name = "lblSaldoTotal";
-            this.lblSaldoTotal.Size = new System.Drawing.Size(71, 15);
+            this.lblSaldoTotal.Size = new System.Drawing.Size(134, 29);
             this.lblSaldoTotal.TabIndex = 0;
             this.lblSaldoTotal.Text = "#Saldo Total";
             // 
             // btnMas
             // 
+            this.btnMas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMas.Enabled = false;
             this.btnMas.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMas.Location = new System.Drawing.Point(424, 114);
@@ -63,12 +65,13 @@ namespace FormularioTP4
             this.btnMas.Size = new System.Drawing.Size(77, 77);
             this.btnMas.TabIndex = 2;
             this.btnMas.Text = "+";
-            this.btnMas.UseVisualStyleBackColor = true;
+            this.btnMas.UseVisualStyleBackColor = false;
             this.btnMas.Click += new System.EventHandler(this.btnMas_Click);
             this.btnMas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMas_MouseUp);
             // 
             // btnMenos
             // 
+            this.btnMenos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMenos.Enabled = false;
             this.btnMenos.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMenos.Location = new System.Drawing.Point(424, 254);
@@ -76,23 +79,25 @@ namespace FormularioTP4
             this.btnMenos.Size = new System.Drawing.Size(77, 77);
             this.btnMenos.TabIndex = 3;
             this.btnMenos.Text = "-";
-            this.btnMenos.UseVisualStyleBackColor = true;
+            this.btnMenos.UseVisualStyleBackColor = false;
             this.btnMenos.Click += new System.EventHandler(this.btnMenos_Click);
             this.btnMenos.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMenos_MouseUp);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnCancelar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.Location = new System.Drawing.Point(278, 451);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 65);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnConfirmarVenta
             // 
+            this.btnConfirmarVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnConfirmarVenta.Enabled = false;
             this.btnConfirmarVenta.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConfirmarVenta.Location = new System.Drawing.Point(470, 451);
@@ -100,7 +105,7 @@ namespace FormularioTP4
             this.btnConfirmarVenta.Size = new System.Drawing.Size(122, 65);
             this.btnConfirmarVenta.TabIndex = 5;
             this.btnConfirmarVenta.Text = "Confirmar Venta";
-            this.btnConfirmarVenta.UseVisualStyleBackColor = true;
+            this.btnConfirmarVenta.UseVisualStyleBackColor = false;
             this.btnConfirmarVenta.Click += new System.EventHandler(this.btnConfirmarVenta_Click);
             // 
             // lvwListaProductosParaVenta
@@ -171,6 +176,7 @@ namespace FormularioTP4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(896, 618);
             this.Controls.Add(this.lvwListaProductosPedidos);
             this.Controls.Add(this.lvwListaProductosParaVenta);
