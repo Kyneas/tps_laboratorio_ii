@@ -89,6 +89,13 @@ namespace FormularioTP4
                 ProbarConexionABaseDeDatos();
                 Sistema.saldoAlcanzado += MostrarQueHayMuchaPlataEnLaCaja;
             }
+            catch(ConexionSQLException ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.btnInsumos.Enabled = false;
+                this.btbVentas.Enabled = false;
+                this.btnNuevaVentana.Enabled = false;
+            }
             catch (Exception ex)
             {
                 LogicaForms.MostrarExcepciones(ex);
@@ -105,7 +112,7 @@ namespace FormularioTP4
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al conectar con la base de datos. Verifique la conexion y vuelva a iniciar el programa", ex);
+                throw new ConexionSQLException("Error al conectar con la base de datos. Verifique la conexion y vuelva a iniciar el programa", ex);
             }
         }
         

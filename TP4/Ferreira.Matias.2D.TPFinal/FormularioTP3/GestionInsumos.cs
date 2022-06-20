@@ -86,7 +86,12 @@ namespace FormularioTP4
                 }
             }
         }
-
+        /// <summary>
+        /// En base a un DialogResult da un mensaje al usuario notificando si se realizo o no un cambio
+        /// </summary>
+        /// <param name="dialogResult"></param>
+        /// <param name="seModifico"></param>
+        /// <param name="noSeModifico"></param>
         public void SeModificoProducto(DialogResult dialogResult, DelegadoModificar seModifico, DelegadoModificar noSeModifico)
         {
             if (dialogResult == DialogResult.OK)
